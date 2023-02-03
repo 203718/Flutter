@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login/pages/login.dart';
+import 'package:login/screens/onboarding/body_bording.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Mi primera aplicacion',
       initialRoute:'/' ,
       routes: {
-        '/': (context) => const Login(),
+        '/': (context) => const BodyBoarding(),
       },
     );
   }

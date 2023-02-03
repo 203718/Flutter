@@ -37,11 +37,12 @@ class Login extends StatelessWidget {
                         labelStyle: const TextStyle(color: Colors.white),
                         hintStyle: const TextStyle(color: Colors.white),
                         suffixIcon: const Icon(Icons.verified_user),
-                        border: OutlineInputBorder(
+                        
+                        enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(70.0),
                             borderSide:const BorderSide(
                               color:Colors.white,
-                              width: 15.0,
+                              width: 0.0,
                               style:BorderStyle.solid
                             )
                             ),
@@ -55,11 +56,17 @@ class Login extends StatelessWidget {
                       decoration: InputDecoration(
                         hintText: 'Password',
                         labelText: 'Password',
-                        labelStyle: TextStyle(color: Colors.white),
-                        hintStyle: TextStyle(color: Colors.white),
+                        labelStyle: const TextStyle(color: Colors.white),
+                        hintStyle: const TextStyle(color: Colors.white),
                         suffixIcon: const Icon(Icons.lock_clock_outlined),
-                        border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(70.0)),
+                        enabledBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(70.0),
+                            borderSide:const BorderSide(
+                              color:Colors.white,
+                              width: 0.0,
+                              style:BorderStyle.solid
+                            )
+                            ),
                       ),
                     ),
                   ),
